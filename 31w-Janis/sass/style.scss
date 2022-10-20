@@ -1,0 +1,32 @@
+/*!
+Theme Name: 31W - Janis Gaudreault
+Theme URI: http://underscores.me/
+Author: Janis Gaudreault
+Author URI: https://github.com/....
+Description: thème de base de wp
+Version: 1.0.0
+Text Domain: _31w
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* Importation des variables */
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/structure";
+
+/* Normalize */
+@import "generic/box-sizing";
+@import "generic/normalize";
+
+/* Éléments de base */
+@import "base/elements/body";
+@import "base/elements/buttons";
+@import "base/elements/fields";
+@import "base/typography/copy";
+@import "base/typography/headings";
+
+/* Composants */
+@import "composants/nav_primaire";
+
+/* Layout */
+@import "layout/sidebar-content";
