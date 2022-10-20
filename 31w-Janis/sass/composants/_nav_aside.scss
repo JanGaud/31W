@@ -1,0 +1,11 @@
+.menu__aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: aquamarine;
+}
+
+.menu__aside .menu{
+    list-style-type: none;
+}

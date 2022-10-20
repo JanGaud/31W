@@ -516,6 +516,18 @@ h6 {
   text-decoration: none;
 }
 
+.menu__aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: aquamarine;
+}
+
+.menu__aside .menu {
+  list-style-type: none;
+}
+
 /* Layout */
 .site {
   display: grid;
@@ -534,9 +546,9 @@ h6 {
   background-color: #ccc;
 }
 
-.site__sidebar {
+.site__aside {
   grid-area: sidebar;
-  background-color: #ddd;
+  background-color: rgb(221, 221, 221);
 }
 
 .site__footer {

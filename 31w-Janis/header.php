@@ -58,7 +58,7 @@
 	wp_nav_menu(array(
 			"menu" => "aside",
 			"container"=> "nav",
-			"container_class"=> "aside",
+			"container_class"=> "menu__aside",
 		))
 	?>
 
