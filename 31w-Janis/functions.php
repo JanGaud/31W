@@ -207,6 +207,7 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
       //  print_r($value);
        $value->title = substr($value->title,7);
        $value->title = wp_trim_words($value->title,3,"...");
+	   $value->title = preg_replace("/\([^)]+\)/","",$value->title);
         //echo $value->title . '<br>';
      } 
     }
@@ -214,3 +215,4 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
     return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
+
