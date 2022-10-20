@@ -502,6 +502,7 @@ h6 {
 .menu__primaire {
   display: flex;
   justify-content: flex-end;
+  background-color: azure;
 }
 
 .menu__primaire .menu {
