@@ -334,7 +334,7 @@ template {
 
 /* Éléments de base */
 body {
-  background: rgb(181, 214, 32);
+  background: rgb(255, 255, 255);
 }
 
 button,
@@ -381,7 +381,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
+  color: rgb(102, 102, 102);
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
@@ -529,11 +529,22 @@ h6 {
   list-style-type: none;
 }
 
+.site__header {
+  background-color: purple;
+}
+
 /* Layout */
 .site {
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: auto;
+  grid-template-areas: "header" "sidebar" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }
 
 .site__header {
