@@ -8,7 +8,7 @@ get_header();
 		<?php wp_nav_menu(array(
             "menu" => "evenements",
             "container" => "nav",
-            "container_class" => "evenements",
+           "container_class" => "evenements",
         ))?>
         
         
