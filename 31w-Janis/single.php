@@ -1,7 +1,11 @@
 <?php
 /**
  * The main template file
- *
+ * 
+ * 
+ *template name: Evenement
+
+
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -9,7 +13,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package igc31w
+ * @package igc31w - template
  */
 
 get_header();

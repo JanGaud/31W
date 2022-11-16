@@ -34,8 +34,9 @@ get_header();
 				?>
 			<header>	
 				<h1><?= $titre  ?></h1>
-				<code>Code du cours:<?= $code_cours  ?></code>
-				<code>Nombre d'heures<?= $heure_cours  ?></code>
+				<code>Sigle du cours:<?= the_field('sigle_du_cours')  ?></code>
+				<code>Nombre d'heures:<?= the_field('duree_du_cours')  ?></code>
+				<code>Type de cours: <?= the_field('duree_du_cours') ?> </code>
 			</header>
 			
 

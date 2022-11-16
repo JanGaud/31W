@@ -334,7 +334,7 @@ template {
 
 /* Éléments de base */
 body {
-  background: rgb(23, 193, 99);
+  background: rgb(98, 36, 126);
 }
 
 button,
@@ -522,11 +522,15 @@ h6 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: aquamarine;
+  background-color: rgb(127, 212, 255);
 }
 
 .menu__aside .menu {
   list-style-type: none;
+}
+
+.menu__aside > ul {
+  text-decoration: none;
 }
 
 .site__header {

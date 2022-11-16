@@ -3,9 +3,13 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: aquamarine;
+    background-color: rgb(127, 212, 255);
 }
 
 .menu__aside .menu{
     list-style-type: none;
+}
+
+.menu__aside>ul{
+    text-decoration: none;
 }
