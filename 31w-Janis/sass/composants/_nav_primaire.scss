@@ -1,7 +1,6 @@
 .menu__primaire {
 	display: flex;
     justify-content: flex-end;
-    background-color: azure;
 }
 
 .menu__primaire .menu {
@@ -12,7 +11,10 @@
     list-style-type: none;
 }
 
+.menu__primaire .menu-item {
 
-.menu__primaire .menu-item a{
-    text-decoration: none;
-}
+}   
+
+.menu__primaire .menu-item a {
+text-decoration: none;
+}   

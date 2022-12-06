@@ -1,15 +1,17 @@
 @charset "UTF-8";
 /*!
-Theme Name: 31W - Janis Gaudreault
+Theme Name: 31W - Eddy Martin
 Theme URI: http://underscores.me/
-Author: Janis Gaudreault
+Author: Eddy Martin
 Author URI: https://github.com/....
-Description: thème de base de wp
+Description: thème de base développé dans le cadre du cours de 31W. 
 Version: 1.0.0
 Text Domain: _31w
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 /* Importation des variables */
+/* ------------------------------------------------- Lien standard */
+/* ------------------------------------------------- Lien menu aside */
 /* Normalize */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
@@ -334,7 +336,7 @@ template {
 
 /* Éléments de base */
 body {
-  background: rgb(23, 193, 99);
+  background: #fff;
 }
 
 button,
@@ -381,7 +383,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: rgb(102, 102, 102);
+  color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
@@ -466,7 +468,7 @@ big {
 }
 
 h1 {
-  font-size: clamp(1rem, 5vw, 7rem);
+  font-size: clamp(1rem, 4vw, 5rem);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -495,14 +497,14 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.6rem, 2vw, 2rem);
+  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 0.83rem + 0.35vw, 1.25rem);
 }
 
 /* Composants */
 .menu__primaire {
   display: flex;
   justify-content: flex-end;
-  background-color: azure;
 }
 
 .menu__primaire .menu {
@@ -517,39 +519,157 @@ h6 {
   text-decoration: none;
 }
 
+.chkBurger {
+  display: none;
+}
+
+.chkBurger:checked ~ .burger {
+  transform: rotate(90deg);
+}
+
+.chkBurger:checked ~ .menu__aside {
+  transform: translateX(0);
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: transform 0.5s;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
 .menu__aside {
+  background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: aquamarine;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-100vw);
+  transition: transform 0.5s;
+  width: 100vw;
+}
+@media screen and (min-width: 700px) {
+  .menu__aside {
+    position: static;
+    width: 100%;
+    transform: translateX(0);
+  }
 }
 
 .menu__aside .menu {
   list-style-type: none;
+  margin: 0 0 0 1rem;
+  padding: 0;
 }
 
-.site__header {
-  background-color: yellow;
+.menu__aside .menu-item a {
+  text-decoration: none;
+  padding: 3px 4px;
+  color: #fff;
+}
+
+.evenement .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.evenement .menu-item {
+  flex: 0 1 200px;
+  border: 1px solid #aaa;
+}
+
+.evenement .menu-item a {
+  text-decoration: none;
+}
+
+.menu-item-icone {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.evenement__stage {
+  background-color: aquamarine;
+}
+
+.evenement__stage .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
+}
+
+.evenement__projet {
+  background-color: #fffd7f;
+}
+.evenement__projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
+}
+
+.evenement__porte {
+  background-color: rgb(21, 157, 236);
+}
+.evenement__porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
+}
+
+.grille {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grille__article {
+  flex: 1 1 250px;
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+}
+
+.grille__article h6,
+.grille__article p:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.sidebar {
+  padding: 1rem 0;
+}
+
+.site__footer {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site__footer > div {
+  width: 20%;
 }
 
 /* Layout */
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header" "sidebar" "main" "footer";
+  grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
-    display: grid;
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgb(40, 40, 40);
+  background-color: #bbb;
 }
 
 .site__main {
@@ -558,9 +678,15 @@ h6 {
   background-color: #ccc;
 }
 
-.site__aside {
+.site__menu {
+  position: relative;
+  grid-area: menu;
+  background-color: #ddd;
+}
+
+.site__sidebar {
   grid-area: sidebar;
-  background-color: rgb(221, 221, 221);
+  background-color: #ddd;
 }
 
 .site__footer {
