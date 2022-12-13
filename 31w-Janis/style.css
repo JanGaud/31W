@@ -717,6 +717,18 @@ h6 {
   text-decoration: none;
 }
 
+.search-header > h2 {
+  margin: 0;
+}
+
+.search-header > small {
+  font-size: 20px;
+}
+
+.search-header {
+  margin-bottom: 50px;
+}
+
 /* Layout */
 .site {
   display: grid;

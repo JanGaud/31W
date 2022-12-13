@@ -20,7 +20,10 @@ get_header();?>
 
 	
 	<main class="site__main">
-
+		<div class="search-header">
+			<h2>Résultats de la recherche</h2>
+			<small> Elément de recherche : <?php echo get_search_query(); ?></small>
+		</div>
 		<?php
 		if ( have_posts() ) :
 			/* Start the Loop */
