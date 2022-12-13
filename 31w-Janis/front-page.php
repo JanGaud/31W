@@ -17,11 +17,6 @@ get_header();
 ?>
 	<main class="site__main">
 
-	<!-- <div class="site__banner">
-		<img src="wp-content/themes/31w-Janis/sass/img/ecoleIMG5.jpg" alt="">		
-	</div> -->
-
-
 		<?php  wp_nav_menu(array(
 			"menu" => "evenements",
 			"container" => "nav",

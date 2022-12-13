@@ -1,6 +1,8 @@
 <?php
 /**
- * The main template file
+ * 
+ * 
+ *Template Name: Search Page
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -12,21 +14,34 @@
  * @package igc31w
  */
 
-get_header();
 
-?>
+get_header();?>
+
+
+	
 	<main class="site__main">
-
+		<code>search.php</code>
 		<?php
 		if ( have_posts() ) :
 			/* Start the Loop */
+			while ( have_posts() ) :
 				the_post(); ?>
-				<?php the_post_thumbnail('thumbnail'); ?>
-				<?php the_post_thumbnail('medium'); ?>
-				<?php the_post_thumbnail('large'); ?>
-				<?php the_post_thumbnail(); ?>
 			<h1><?= get_the_title(); ?></h1>
-			<?php the_content();		
+
+			<?php the_content();
+			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
+			?>
+			
+			<blockquote><?php the_excerpt(); ?></blockquote>
+			<blockquote><?= wp_trim_words(get_the_excerpt(),5, $le_permalien); ?></blockquote>
+			
+			<pre><?php the_category(); ?></pre>
+			<pre><?php the_date(); ?></pre>
+			<pre><?php the_permalink();  ?></pre>
+			<pre><?php the_author(); ?></pre>
+
+<?php
+			endwhile;
 			endif;	
 		?>
 	</main><!-- #main -->
