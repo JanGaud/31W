@@ -37,7 +37,14 @@
 			"container"=> "nav",
 			"container_class"=> "menu__primaire",
 		))
+		
 	?>
+
+		<div class="header-widgets">
+			<?php get_sidebar( 'header-1' ); ?>
+			<?php get_sidebar( 'header-2' ); ?>
+		</div>
+
 		<div class="site__branding">
 			<?php
 			the_custom_logo();
