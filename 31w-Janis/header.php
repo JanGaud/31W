@@ -22,7 +22,7 @@
 	<?php wp_head(); ?>
 		<style>
 	  		.site__header { background-color:<?= get_theme_mod("site__title__background"); ?>;}
-	  </style>
+	  	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -56,6 +56,7 @@
 				<p class="site__description"><?php echo $igc31w_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+
 	</header><!-- #masthead -->
 	<aside class="site__menu">
 	<input type="checkbox" id="chkBurger" class="chkBurger">
@@ -69,6 +70,7 @@
 			"container_class"=> "menu__aside",
 		))
 	?>
+
 	</aside>
 	<aside class="site__sidebar">
 			<h6>Calendrier</h6>
