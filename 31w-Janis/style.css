@@ -649,7 +649,7 @@ h6 {
 }
 
 .site__footer {
-  background-color: rgb(26, 0, 68);
+  background-color: #E0E2DB;
   padding: 3rem;
   display: flex;
   justify-content: space-around;
@@ -674,13 +674,13 @@ h6 {
 
 .site__header {
   grid-area: header;
-  background-color: #bbb;
+  background-color: #2E3532;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #ccc;
+  background-color: #D2D4C8;
 }
 
 .site__menu {
@@ -691,10 +691,10 @@ h6 {
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #ddd;
+  background-color: #D2D4C8;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #bbb;
+  background-color: #E0E2DB;
 }/*# sourceMappingURL=style.css.map */

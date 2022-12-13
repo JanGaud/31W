@@ -21,13 +21,13 @@
 
 .site__header {
 	grid-area: header;
-    background-color: #bbb;
+    background-color: #2E3532 ;
 }
 
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-    background-color: #ccc;
+    background-color: #D2D4C8;
 }
 
 .site__menu {
@@ -37,12 +37,12 @@
 }
 .site__sidebar {
 	grid-area: sidebar;
-    background-color: #ddd;
+    background-color: #D2D4C8;
 }
 
 .site__footer {
 	grid-area: footer;
-    background-color: #bbb;
+    background-color: #E0E2DB;
 }
 
 // @import "no-sidebar";
