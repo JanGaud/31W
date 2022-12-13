@@ -1,4 +1,5 @@
 .menu__primaire {
+    background-color: #2E3532;
 	display: flex;
     justify-content: flex-end;
 }
@@ -16,5 +17,6 @@
 }   
 
 .menu__primaire .menu-item a {
-text-decoration: none;
+    color: whitesmoke;
+    text-decoration: none;
 }   
