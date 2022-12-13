@@ -692,6 +692,29 @@ h6 {
 
 .elements-recherches {
   display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.elements-txt-separation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.elements-txt-separation h5 {
+  margin: 0;
+}
+
+.elements-recherches > blockquote {
+  margin: 0;
+}
+
+.elements-recherches a {
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* Layout */
