@@ -13,10 +13,23 @@
 }
 
 .menu__primaire .menu-item {
-
+    position: right;
 }   
 
 .menu__primaire .menu-item a {
     color: whitesmoke;
     text-decoration: none;
-}   
+}
+
+.header-widgets{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-widgets > * {
+    color: white;
+    margin-right: 50px;
+}
