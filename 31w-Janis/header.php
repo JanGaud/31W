@@ -17,9 +17,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+
+	<!-- c'est ici le code qui met un personalizer sur un element du site -->
 	<?php wp_head(); ?>
-	<style>
-	  .site__header { background-color:<?= get_theme_mod("site__title__background"); ?>;}
+		<style>
+	  		.site__header { background-color:<?= get_theme_mod("site__title__background"); ?>;}
 	  </style>
 </head>
 

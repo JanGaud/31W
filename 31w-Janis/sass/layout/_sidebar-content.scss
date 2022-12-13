@@ -26,14 +26,15 @@
 
 .site__main {
 	grid-area: main;
+	padding: 20px;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-    background-color: #D2D4C8;
+    background-color: #E0E2DB;
 }
 
 .site__menu {
 	position:relative;
 	grid-area: menu;
-    background-color: #ddd;
+    background-color: #8B2635;
 }
 .site__sidebar {
 	grid-area: sidebar;

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-Theme Name: 31W - Eddy Martin
+Theme Name: 31W - Janis Gaudreault
 Theme URI: http://underscores.me/
-Author: Eddy Martin
+Author: Janis Gaudreault
 Author URI: https://github.com/....
 Description: thème de base développé dans le cadre du cours de 31W. 
 Version: 1.0.0
@@ -547,15 +547,16 @@ h6 {
 }
 
 .menu__aside {
-  background-color: rgb(175, 23, 23);
+  background-color: #8B2635;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   position: absolute;
   top: 30px;
   transform: translateX(-100vw);
   transition: transform 0.5s;
+  height: fit-content;
   width: 100vw;
 }
 @media screen and (min-width: 700px) {
@@ -569,13 +570,20 @@ h6 {
 .menu__aside .menu {
   list-style-type: none;
   margin: 0 0 0 1rem;
-  padding: 0;
+  padding: 20px;
 }
 
 .menu__aside .menu-item a {
   text-decoration: none;
   padding: 3px 4px;
   color: #fff;
+}
+
+#menu-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
 }
 
 .evenement .menu {
@@ -667,7 +675,7 @@ h6 {
 }
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 25% auto;
+    grid-template-columns: 20% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }
@@ -679,14 +687,15 @@ h6 {
 
 .site__main {
   grid-area: main;
+  padding: 20px;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #D2D4C8;
+  background-color: #E0E2DB;
 }
 
 .site__menu {
   position: relative;
   grid-area: menu;
-  background-color: #ddd;
+  background-color: #8B2635;
 }
 
 .site__sidebar {
