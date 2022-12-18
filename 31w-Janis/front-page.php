@@ -17,6 +17,10 @@ get_header();
 ?>
 	<main class="site__main">
 
+	<?php
+	echo do_shortcode('[smartslider3 slider="2"]');
+	?>
+
 		<?php  wp_nav_menu(array(
 			"menu" => "evenements",
 			"container" => "nav",

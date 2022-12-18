@@ -40,7 +40,7 @@ get_header();?>
 					</div>
 			</div>
 			
-	<?php
+		<?php
 			endwhile;
 			endif;	
 		?>
